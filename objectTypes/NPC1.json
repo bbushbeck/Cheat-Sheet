@@ -1,0 +1,125 @@
+{
+	"name": "NPC1",
+	"plugin-id": "Sprite",
+	"sid": 457463039460004,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "IsInteracting",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 949792944119757
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 346,
+						"height": 446,
+						"originX": 0.5708092485549132,
+						"originY": 0.4843049327354261,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 8991789,
+						"collisionPoly": {
+							"points": [
+								0.8439306358381503,
+								0.03363228699551568,
+								0.9884393063583815,
+								0.5852017937219731,
+								0.8872832369942196,
+								0.8856502242152466,
+								0.7369942196531791,
+								0.9753363228699552,
+								0.5346820809248555,
+								0.9977578475336323,
+								0.4624277456647399,
+								0.9977578475336323,
+								0.3670520231213873,
+								0.9663677130044843,
+								0.026011560693641633,
+								0.5224215246636771,
+								0.4335260115606936,
+								0.053811659192825156
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 656729424026102,
+				"name": "Idle",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 344,
+						"height": 448,
+						"originX": 0.559593023255814,
+						"originY": 0.48660714285714285,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7235977,
+						"collisionPoly": {
+							"points": [
+								0.8226744186046512,
+								0.03571428571428571,
+								0.872093023255814,
+								0.049107142857142856,
+								0.9244186046511628,
+								0.08482142857142858,
+								0.9883720930232558,
+								0.5982142857142857,
+								0.875,
+								0.8950892857142857,
+								0.7383720930232558,
+								0.9709821428571429,
+								0.5261627906976745,
+								0.9977678571428571,
+								0.438953488372093,
+								0.9977678571428571,
+								0.3517441860465116,
+								0.9642857142857143,
+								0.11046511627906974,
+								0.6741071428571429,
+								0.02034883720930236,
+								0.5066964285714286,
+								0.01744186046511631,
+								0.43526785714285715,
+								0.4476744186046512,
+								0.03571428571428571
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 496294574061050,
+				"name": "Interact",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

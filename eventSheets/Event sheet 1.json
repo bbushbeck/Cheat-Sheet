@@ -1,5 +1,429 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 567274137650434,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Prota",
+					"sid": 510191872208813,
+					"parameters": {
+						"state": "not-mirrored"
+					}
+				}
+			],
+			"sid": 616799651514079
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 123999476598845,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-mirrored",
+					"objectClass": "Prota",
+					"sid": 572878286430163,
+					"parameters": {
+						"state": "mirrored"
+					}
+				}
+			],
+			"sid": 855943027102452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Prota",
+					"sid": 225500904321787,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Prota",
+					"sid": 876030548937152,
+					"parameters": {
+						"animation": "\"Walk\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 435083291048029
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Prota",
+					"sid": 578933275947158,
+					"behaviorType": "Platform",
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Prota",
+					"sid": 755582639121315,
+					"parameters": {
+						"animation": "\"Idle\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 919137105574772
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 985043661360041,
+					"parameters": {
+						"object": "NPC1"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC1",
+					"sid": 529873372943785,
+					"parameters": {
+						"instance-variable": "IsInteracting"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 681804004396352,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BubbleSpeech",
+					"sid": 323288122897209,
+					"parameters": {
+						"x": "608",
+						"y": "288"
+					}
+				}
+			],
+			"sid": 997935940687760
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 619931065683314,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NPC1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NPC1",
+					"sid": 210357829120689,
+					"parameters": {
+						"animation": "\"Interact\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 265867591832424,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC1",
+					"sid": 596433149136141,
+					"parameters": {
+						"instance-variable": "IsInteracting",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 696134180729252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 241510585672999,
+					"parameters": {
+						"object": "NPC1"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 747754262821745,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 350065886908932
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 984983461056627,
+					"parameters": {
+						"object": "NPC2"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC2",
+					"sid": 241345089843021,
+					"parameters": {
+						"instance-variable": "IsInteracting2"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 538438490518390,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BubbleSpeech",
+					"sid": 632756254412925,
+					"parameters": {
+						"x": "1024",
+						"y": "336"
+					}
+				}
+			],
+			"sid": 398956143569817
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 913750206386521,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NPC2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NPC2",
+					"sid": 794870795615598,
+					"parameters": {
+						"animation": "\"Interact\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 925476564235834,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC2",
+					"sid": 814052748069184,
+					"parameters": {
+						"instance-variable": "IsInteracting2",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 974223789859414
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 127001428548604,
+					"parameters": {
+						"object": "NPC3"
+					}
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC3",
+					"sid": 517713747814192,
+					"parameters": {
+						"instance-variable": "IsInteracting3"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 674408044784910,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BubbleSpeech",
+					"sid": 161956046090902,
+					"parameters": {
+						"x": "1408",
+						"y": "320"
+					}
+				}
+			],
+			"sid": 901655389048570
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 548056077343903,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "NPC3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "NPC3",
+					"sid": 154547532361982,
+					"parameters": {
+						"animation": "\"Interact\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 895587830724661,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC3",
+					"sid": 182025020036271,
+					"parameters": {
+						"instance-variable": "IsInteracting3",
+						"value": "true"
+					}
+				}
+			],
+			"sid": 214958602788034
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 747653187859952
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Obj_SiguienteNivel",
+					"sid": 359506848944420,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 317938483627119
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Prota",
+					"sid": 722596041734102,
+					"parameters": {
+						"object": "Obj_SiguienteNivel"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 848422795340601,
+					"parameters": {
+						"layout": "\"Layout 2\""
+					}
+				}
+			],
+			"sid": 216278275855366
+		}
+	],
 	"sid": 596723197295744
 }
