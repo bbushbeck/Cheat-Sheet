@@ -9,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Keyboard",
+			"name": "Teclado",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -17,6 +17,13 @@
 			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "SVGPicture",
+			"name": "Imagen SVG",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -30,21 +37,21 @@
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
+			"name": "Plataforma",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "Desplazar hasta",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -60,7 +67,18 @@
 			"BubbleSpeech",
 			"NPC2",
 			"NPC3",
-			"Obj_SiguienteNivel"
+			"Obj_SiguienteNivel",
+			"ImagenSVG",
+			"Fondo2",
+			"Fondo3",
+			"profetext",
+			"profetext2",
+			"profetext3",
+			"profetext4",
+			"chuleta",
+			"sospecha",
+			"sospecha2",
+			"sospecha3"
 		],
 		"subfolders": []
 	},

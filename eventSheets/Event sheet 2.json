@@ -1,5 +1,297 @@
 {
 	"name": "Event sheet 2",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "dialogo",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 429796242605352
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 156398080605018
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "profetext3",
+					"sid": 250158843107912,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "profetext4",
+					"sid": 649128777148983,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "profetext2",
+					"sid": 328823552769364,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "profetext",
+					"sid": 726968254327733,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fondo2",
+					"sid": 543142241948251,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Fondo3",
+					"sid": 684699478369885,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 747503086773795
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-click",
+					"objectClass": "Mouse",
+					"sid": 193516158935170,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 710288829859311,
+					"parameters": {
+						"variable": "dialogo",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 877538085816473,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 566522907120965,
+							"parameters": {
+								"variable": "dialogo",
+								"comparison": 0,
+								"value": "2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "profetext",
+							"sid": 874878723284911,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "profetext2",
+							"sid": 451898846290505,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 643938434091298
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 894200916487217,
+							"parameters": {
+								"variable": "dialogo",
+								"comparison": 0,
+								"value": "3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "profetext2",
+							"sid": 665896532026962,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "profetext3",
+							"sid": 765451740410509,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 258636547531904
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 584122842225236,
+							"parameters": {
+								"variable": "dialogo",
+								"comparison": 0,
+								"value": "4"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "profetext3",
+							"sid": 260110058387801,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "profetext4",
+							"sid": 353219845519669,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 486875667504766
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 947472597243327,
+							"parameters": {
+								"variable": "dialogo",
+								"comparison": 0,
+								"value": "5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "profetext4",
+							"sid": 778893951625193,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fondo3",
+							"sid": 737844004729113,
+							"parameters": {
+								"visibility": "visible"
+							}
+						},
+						{
+							"id": "set-visible",
+							"objectClass": "Fondo2",
+							"sid": 415156713328141,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 625258402290529
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 227771488068866,
+					"parameters": {
+						"key": 69
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 240449060959563,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 942012193908746
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 240255338211187,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 801151745709499,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 260984802098890
+		}
+	],
 	"sid": 434242579742868
 }

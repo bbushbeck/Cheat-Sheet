@@ -1,0 +1,58 @@
+{
+	"name": "sospecha2",
+	"plugin-id": "Sprite",
+	"sid": 853263874633638,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 654,
+						"height": 104,
+						"originX": -1.245326877845481,
+						"originY": 44.05614143920596,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4004971,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.5184553349875929,
+								1,
+								1,
+								1,
+								1,
+								0.7065045458921916,
+								1,
+								0.4542270149329004,
+								1,
+								0,
+								1,
+								0,
+								0.8553039702233249
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 254049211293177,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Fondo2",
+	"plugin-id": "TiledBg",
+	"sid": 903468524948715,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 1672,
+		"height": 941,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 6233905,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
