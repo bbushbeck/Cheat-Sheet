@@ -1,0 +1,60 @@
+{
+	"name": "BubbleSpeech",
+	"plugin-id": "Sprite",
+	"sid": 740429482053733,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1473,
+						"height": 834,
+						"originX": 0.5220638153428377,
+						"originY": 0.48081534772182255,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 2291976,
+						"collisionPoly": {
+							"points": [
+								0.8153428377460964,
+								0.0035971223021582736,
+								0.8716904276985743,
+								0.03597122302158273,
+								0.9409368635437881,
+								0.1211031175059952,
+								0.9735234215885947,
+								0.19904076738609114,
+								0.9938900203665988,
+								0.4196642685851319,
+								0.4860828241683639,
+								0.9016786570743405,
+								0.1446028513238289,
+								0.7434052757793765,
+								0.18669382213170402,
+								0.2733812949640288
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 435474973020709,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
