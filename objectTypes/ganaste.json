@@ -1,0 +1,58 @@
+{
+	"name": "ganaste",
+	"plugin-id": "Sprite",
+	"sid": 638986140949397,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 640,
+						"height": 286,
+						"originX": 1.0453125,
+						"originY": -0.8986013986013986,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 7464323,
+						"collisionPoly": {
+							"points": [
+								0.934375,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0.8846153846153846,
+								1,
+								0.9300699300699301,
+								0.10468750000000002,
+								0.8706293706293706,
+								0.1296875,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 981341791230685,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

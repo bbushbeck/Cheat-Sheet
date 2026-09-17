@@ -1,0 +1,814 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "mProgreso",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 774571907416971
+		},
+		{
+			"eventType": "variable",
+			"name": "mSospecha",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 764272264016032
+		},
+		{
+			"eventType": "variable",
+			"name": "mJugando",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 158072335746862
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 717430224862248
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 227128048640716,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha",
+					"sid": 987635935543951,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha2",
+					"sid": 909671726416559,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha3",
+					"sid": 878376939938264,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso",
+					"sid": 461303977364386,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso2",
+					"sid": 736373132468557,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso3",
+					"sid": 510671063002925,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 834771255878362,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ganaste",
+					"sid": 812072118002165,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "perdiste",
+					"sid": 952154776421631,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 938855891604981,
+					"parameters": {
+						"variable": "mProgreso",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 194466968486406,
+					"parameters": {
+						"variable": "mSospecha",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 895806716527645,
+					"parameters": {
+						"variable": "mJugando",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 105609848799735
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 520069804298030,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 151484749235677,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 886805231332909,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 759941307803022
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 181241697483145,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 554649326519848,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 158159508885437,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 347686903193620
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 505911194910801,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 706884050776271,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 252755700202241,
+					"parameters": {
+						"variable": "mProgreso",
+						"value": "12 * dt"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 945339086598610,
+					"parameters": {
+						"variable": "mSospecha",
+						"value": "18 * dt"
+					}
+				}
+			],
+			"sid": 330158940915076
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 494132498622590
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 593810620492544,
+					"parameters": {
+						"variable": "mProgreso",
+						"comparison": 2,
+						"value": "34"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "progreso",
+					"sid": 158304900515860,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso2",
+					"sid": 133436174503849,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso3",
+					"sid": 376528789462786,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 458269029208799
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 901093537166199
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 358871217106401,
+					"parameters": {
+						"variable": "mProgreso",
+						"comparison": 5,
+						"value": "34"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 556791626843721,
+					"parameters": {
+						"variable": "mProgreso",
+						"comparison": 2,
+						"value": "67"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "progreso",
+					"sid": 866243499575871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso2",
+					"sid": 829174282043757,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso3",
+					"sid": 190945348288944,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 311527410022793
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 315866645663456
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 718837221669871,
+					"parameters": {
+						"variable": "mProgreso",
+						"comparison": 4,
+						"value": "67"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "progreso",
+					"sid": 464255004545393,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso2",
+					"sid": 455972996321727,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "progreso3",
+					"sid": 273548912342172,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 439330177853197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 218951002147111
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 841434861351713,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 2,
+						"value": "34"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha",
+					"sid": 324699022243635,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha2",
+					"sid": 599231160803177,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha3",
+					"sid": 496581665582504,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 923586088851037,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 822392671353109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 280959962530181
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 944505221138229,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 5,
+						"value": "34"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 935743542958336,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 2,
+						"value": "67"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha",
+					"sid": 607217959346061,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha2",
+					"sid": 186033185904184,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha3",
+					"sid": 916903857306022,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 652568035675148,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 438297601484361
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 305796993878941
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 359299699738019,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 4,
+						"value": "67"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 912476409767176,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 2,
+						"value": "100"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha",
+					"sid": 488776501851549,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha2",
+					"sid": 734703148533162,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "sospecha3",
+					"sid": 271315496621422,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 532556940857398,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 466529001137208
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 726072174958544,
+					"parameters": {
+						"key": 69
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 265167934861652,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 915446231677398,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 697134892379857,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 908955174986410,
+					"parameters": {
+						"variable": "mSospecha",
+						"value": "35"
+					}
+				}
+			],
+			"sid": 523873952952858
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 239241196893813,
+					"parameters": {
+						"variable": "mProgreso",
+						"comparison": 5,
+						"value": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 407617835954938,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 617058952773274,
+					"parameters": {
+						"variable": "mJugando",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 841683726755167,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 119766937222372,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ganaste",
+					"sid": 276978369479495,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "perdiste",
+					"sid": 228557184350066,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 771947599509695
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 403198854030077,
+					"parameters": {
+						"variable": "mSospecha",
+						"comparison": 5,
+						"value": "100"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 269205494205491,
+					"parameters": {
+						"variable": "mJugando",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 680052555709157,
+					"parameters": {
+						"variable": "mJugando",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "chuleta",
+					"sid": 996643927420758,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "esconder",
+					"sid": 301736836732496,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ganaste",
+					"sid": 870816527833540,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "perdiste",
+					"sid": 329304378775495,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 852994074694088
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 504011479573110,
+					"parameters": {
+						"key": 82
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 742621309544365
+				}
+			],
+			"sid": 201642193907161
+		}
+	],
+	"sid": 609457559675346
+}

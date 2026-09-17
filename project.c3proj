@@ -1,4 +1,3 @@
-
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 49502,
@@ -10,7 +9,7 @@
 		{
 			"type": "plugin",
 			"id": "Keyboard",
-			"name": "Teclado",
+			"name": "Keyboard",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -24,7 +23,7 @@
 		{
 			"type": "plugin",
 			"id": "SVGPicture",
-			"name": "Imagen SVG",
+			"name": "SVG Picture",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -45,14 +44,14 @@
 		{
 			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Fondo en mosaico",
+			"name": "Tiled Background",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Plataforma",
+			"name": "Platform",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -66,7 +65,7 @@
 		{
 			"type": "behavior",
 			"id": "scrollto",
-			"name": "Desplazar hasta",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -97,7 +96,14 @@
 			"Fade",
 			"BurbujaD",
 			"Dialogo",
-			"pasarD"
+			"pasarD",
+			"Fondo4",
+			"esconder",
+			"progreso",
+			"progreso2",
+			"progreso3",
+			"ganaste",
+			"perdiste"
 		],
 		"subfolders": []
 	},
@@ -111,14 +117,16 @@
 	"layouts": {
 		"items": [
 			"Layout 1",
-			"Layout 2"
+			"Layout 2",
+			"Layout 3"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Event sheet 2"
+			"Event sheet 2",
+			"Event sheet 3"
 		],
 		"subfolders": []
 	},

@@ -1,0 +1,58 @@
+{
+	"name": "progreso2",
+	"plugin-id": "Sprite",
+	"sid": 479461263543552,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 690,
+						"height": 115,
+						"originX": 2.0395328923426024,
+						"originY": 39.46004140786749,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4670692,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.7118012422360246,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0.1734656305525229,
+								1,
+								0.22306210262667783,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 101263365285580,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

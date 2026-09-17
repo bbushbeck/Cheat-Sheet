@@ -238,6 +238,23 @@
 							"parameters": {
 								"visibility": "invisible"
 							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "Fade",
+							"sid": 986723691076941,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"FadeOut\"",
+								"property": "offsetOpacity",
+								"end-value": "100",
+								"time": "0.5",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
 						}
 					],
 					"sid": 625258402290529
@@ -248,49 +265,26 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 227771488068866,
+					"id": "on-tweens-finished",
+					"objectClass": "Fade",
+					"sid": 740992422560882,
+					"behaviorType": "Tween",
 					"parameters": {
-						"key": 69
+						"tags": "\"FadeOut\""
 					}
 				}
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "chuleta",
-					"sid": 240449060959563,
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 826861859260503,
 					"parameters": {
-						"visibility": "visible"
+						"layout": "Layout 3"
 					}
 				}
 			],
-			"sid": 942012193908746
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 240255338211187,
-					"parameters": {
-						"key": 83
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-visible",
-					"objectClass": "chuleta",
-					"sid": 801151745709499,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				}
-			],
-			"sid": 260984802098890
+			"sid": 163316207837153
 		}
 	],
 	"sid": 434242579742868

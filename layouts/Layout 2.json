@@ -297,7 +297,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "chuleta",
+					"type": "Fade",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -305,124 +305,31 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 19,
-					"sid": 493347660371008,
+					"uid": 40,
+					"sid": 690440776940039,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 732,
-						"y": 790,
-						"width": 283,
-						"height": 259,
-						"originX": 0.6007067137809188,
-						"originY": 1.0965250965250966,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "sospecha",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+					"behaviors": {
+						"Tween": {
+							"properties": {
+								"enabled": true
+							}
+						}
 					},
-					"uid": 20,
-					"sid": 533654666801692,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": -17,
-						"y": 552,
-						"width": 667,
-						"height": 124,
-						"originX": -0.038980509745127435,
-						"originY": 4.338709677419355,
+						"x": 632,
+						"y": 517.5,
+						"width": 2032,
+						"height": 1477,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "sospecha2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 21,
-					"sid": 434772882368276,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -805.2850363808922,
-						"y": 4615.663151364764,
-						"width": 659,
-						"height": 104,
-						"originX": -1.245326877845481,
-						"originY": 44.05614143920596,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"z": 0,
-						"angle": 0
-					}
-				},
-				{
-					"type": "sospecha3",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"sid": 756808562179062,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -796,
-						"y": 4505,
-						"width": 636,
-						"height": 111,
-						"originX": -1.305729210866265,
-						"originY": 40.295844231328104,
-						"color": [
-							1,
-							1,
-							1,
-							1
+							0
 						],
 						"z": 0,
 						"angle": 0
