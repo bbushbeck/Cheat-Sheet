@@ -1,0 +1,54 @@
+{
+	"name": "BurbujaD",
+	"plugin-id": "Sprite",
+	"sid": 301045952911701,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1403,
+						"height": 773,
+						"originX": 0.49964362081254454,
+						"originY": 0.5122897800776197,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 3971970,
+						"collisionPoly": {
+							"points": [
+								0.18745545260156807,
+								0.2147477360931436,
+								0.895224518888097,
+								0.23932729624838292,
+								0.8866714183891661,
+								0.7904269081500647,
+								0.49394155381325733,
+								0.943078913324709,
+								0.0541696364932288,
+								0.7386804657179818
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 465081851172485,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

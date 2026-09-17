@@ -2,6 +2,16 @@
 	"name": "Event sheet 1",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "DialogoNum",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "Ver el dialogo q usa cada personaje para no hacer como mil textos y bajarle la opacidad a cada uno",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 773221120960353
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -134,6 +144,39 @@
 						"x": "608",
 						"y": "288"
 					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 361548851619467,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 736182461212728,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 778604197710422,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 647319324921159,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
 				}
 			],
 			"sid": 997935940687760
@@ -178,9 +221,85 @@
 						"instance-variable": "IsInteracting",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 745168320865894,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 118599892895653,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 443175498353660,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 173581699337331,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 575979418654696,
+					"parameters": {
+						"text": "\"Hoy es el examen de Matemáticas...\""
+					}
 				}
 			],
 			"sid": 696134180729252
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 250443957042840,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "pasarD"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 561967760783005,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 332275238553131,
+					"parameters": {
+						"text": "\"...Lo bueno que el profe no nos quita el celular.\""
+					}
+				}
+			],
+			"sid": 970619083080462
 		},
 		{
 			"eventType": "block",
@@ -193,6 +312,15 @@
 						"object": "NPC1"
 					},
 					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC1",
+					"sid": 553137267260527,
+					"parameters": {
+						"instance-variable": "IsInteracting"
+					},
+					"isInverted": true
 				}
 			],
 			"actions": [
@@ -200,6 +328,30 @@
 					"id": "set-opacity",
 					"objectClass": "BubbleSpeech",
 					"sid": 747754262821745,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 720929272559506,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 597248165552278,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 631620577205513,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -414,15 +566,49 @@
 			],
 			"actions": [
 				{
+					"id": "tween-one-property",
+					"objectClass": "Fade",
+					"sid": 972037040280162,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"FadeOut\"",
+						"property": "offsetOpacity",
+						"end-value": "100",
+						"time": "0.5",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no",
+						"repeat-count": "1"
+					}
+				}
+			],
+			"sid": 216278275855366
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "Fade",
+					"sid": 716085096120587,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"FadeOut\""
+					}
+				}
+			],
+			"actions": [
+				{
 					"id": "go-to-layout-by-name",
 					"objectClass": "System",
-					"sid": 848422795340601,
+					"sid": 542073266056534,
 					"parameters": {
 						"layout": "\"Layout 2\""
 					}
 				}
 			],
-			"sid": 216278275855366
+			"sid": 648358960887732
 		}
 	],
 	"sid": 596723197295744
