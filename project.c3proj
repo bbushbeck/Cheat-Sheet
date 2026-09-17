@@ -1,3 +1,4 @@
+
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 49502,
@@ -36,6 +37,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Fondo en mosaico",
 			"author": "Scirra",
@@ -45,6 +53,13 @@
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Plataforma",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -78,7 +93,11 @@
 			"chuleta",
 			"sospecha",
 			"sospecha2",
-			"sospecha3"
+			"sospecha3",
+			"Fade",
+			"BurbujaD",
+			"Dialogo",
+			"pasarD"
 		],
 		"subfolders": []
 	},
