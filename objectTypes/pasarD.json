@@ -1,0 +1,52 @@
+{
+	"name": "pasarD",
+	"plugin-id": "Sprite",
+	"sid": 138055329730882,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 999,
+						"height": 1132,
+						"originX": 0.4984984984984985,
+						"originY": 0.49514134275618377,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5466830,
+						"collisionPoly": {
+							"points": [
+								0.4794794794794795,
+								0.18021201413427562,
+								0.7517517517517518,
+								0.7084805653710248,
+								0.47147147147147145,
+								0.7897526501766784,
+								0.14014014014014015,
+								0.5203180212014133
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 253990754961908,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

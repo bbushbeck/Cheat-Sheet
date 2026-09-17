@@ -1,0 +1,60 @@
+{
+	"name": "profetext2",
+	"plugin-id": "Sprite",
+	"sid": 940657635919653,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 729,
+						"height": 531,
+						"originX": 0.997252721191044,
+						"originY": 2.060078416844185,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 561770,
+						"collisionPoly": {
+							"points": [
+								1,
+								0.22442962551325984,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.8153576610786948,
+								0,
+								0.4172146583927634,
+								0,
+								0.23281158346454262
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 858674917964081,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
