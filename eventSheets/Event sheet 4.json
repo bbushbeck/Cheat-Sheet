@@ -1,0 +1,49 @@
+{
+	"name": "Event sheet 4",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 104150121744431,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botonJugar"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 939779317077041,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				}
+			],
+			"sid": 273733262155879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 262837721414957,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "botonOpciones"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 834104381123129
+		}
+	],
+	"sid": 359178720770526
+}

@@ -12,6 +12,61 @@
 			"sid": 773221120960353
 		},
 		{
+			"eventType": "variable",
+			"name": "NPCactual",
+			"type": "string",
+			"initialValue": "\"\"",
+			"comment": "Pa ver q npc es",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 691614662223930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 991811134493558
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 849869456654180,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 737119928978717,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 482370929106532,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 718659828300217,
+					"parameters": {
+						"opacity": "0"
+					}
+				}
+			],
+			"sid": 309828846910842
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -129,17 +184,9 @@
 			],
 			"actions": [
 				{
-					"id": "set-opacity",
-					"objectClass": "BubbleSpeech",
-					"sid": 681804004396352,
-					"parameters": {
-						"opacity": "100"
-					}
-				},
-				{
 					"id": "set-position",
 					"objectClass": "BubbleSpeech",
-					"sid": 323288122897209,
+					"sid": 241968712914764,
 					"parameters": {
 						"x": "608",
 						"y": "288"
@@ -147,35 +194,10 @@
 				},
 				{
 					"id": "set-opacity",
-					"objectClass": "BurbujaD",
-					"sid": 361548851619467,
+					"objectClass": "BubbleSpeech",
+					"sid": 668987901126966,
 					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "Dialogo",
-					"sid": 736182461212728,
-					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-opacity",
-					"objectClass": "pasarD",
-					"sid": 778604197710422,
-					"parameters": {
-						"opacity": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 647319324921159,
-					"parameters": {
-						"variable": "DialogoNum",
-						"value": "0"
+						"opacity": "100"
 					}
 				}
 			],
@@ -223,11 +245,38 @@
 					}
 				},
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 336740914851240,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"NPC1\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 250901609369280,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
 					"id": "set-opacity",
 					"objectClass": "BurbujaD",
 					"sid": 745168320865894,
 					"parameters": {
 						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BurbujaD",
+					"sid": 790020913266840,
+					"parameters": {
+						"x": "616",
+						"y": "272"
 					}
 				},
 				{
@@ -239,6 +288,15 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "Dialogo",
+					"sid": 705034972107196,
+					"parameters": {
+						"x": "528",
+						"y": "240"
+					}
+				},
+				{
 					"id": "set-opacity",
 					"objectClass": "pasarD",
 					"sid": 443175498353660,
@@ -247,12 +305,12 @@
 					}
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 173581699337331,
+					"id": "set-position",
+					"objectClass": "pasarD",
+					"sid": 263002417791743,
 					"parameters": {
-						"variable": "DialogoNum",
-						"value": "1"
+						"x": "712",
+						"y": "312"
 					}
 				},
 				{
@@ -289,17 +347,204 @@
 						"variable": "DialogoNum",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "Dialogo",
-					"sid": 332275238553131,
-					"parameters": {
-						"text": "\"...Lo bueno que el profe no nos quita el celular.\""
-					}
 				}
 			],
 			"sid": 970619083080462
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 888862406923748,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC1\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 225292453362767,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 989215552575651,
+					"parameters": {
+						"text": "\"Lo bueno es que ayer hice mis notas...\""
+					}
+				}
+			],
+			"sid": 314849178045138
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 595810545637038,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC1\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 107967350220385,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 656494443234684,
+					"parameters": {
+						"text": "\"Las sacaré cuando vea la oportunidad.\""
+					}
+				}
+			],
+			"sid": 432186809307543
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 623173087081464,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC1\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 582687777739090,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 152222452861963,
+					"parameters": {
+						"text": "\"Aunque Mr. Perro sí se fija si alguien se está copiando.\""
+					}
+				}
+			],
+			"sid": 238528115808533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 620300587050926,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC1\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 471060517598558,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 181743206720577,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 692517992926760,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 560840512168375,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 605175945517658,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC1",
+					"sid": 280058545203036,
+					"parameters": {
+						"instance-variable": "IsInteracting",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 458681606476158,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 281751824898151,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"\""
+					}
+				}
+			],
+			"sid": 854361197741185
 		},
 		{
 			"eventType": "block",
@@ -314,11 +559,47 @@
 					"isInverted": true
 				},
 				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 952488344654013,
+					"parameters": {
+						"object": "NPC2"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "Mouse",
+					"sid": 113977691662291,
+					"parameters": {
+						"object": "NPC3"
+					},
+					"isInverted": true
+				},
+				{
 					"id": "is-boolean-instance-variable-set",
 					"objectClass": "NPC1",
-					"sid": 553137267260527,
+					"sid": 722131829787634,
 					"parameters": {
 						"instance-variable": "IsInteracting"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC2",
+					"sid": 269324858947224,
+					"parameters": {
+						"instance-variable": "IsInteracting2"
+					},
+					"isInverted": true
+				},
+				{
+					"id": "is-boolean-instance-variable-set",
+					"objectClass": "NPC3",
+					"sid": 989783125181417,
+					"parameters": {
+						"instance-variable": "IsInteracting3"
 					},
 					"isInverted": true
 				}
@@ -333,27 +614,30 @@
 					}
 				},
 				{
-					"id": "set-opacity",
-					"objectClass": "Dialogo",
-					"sid": 720929272559506,
+					"id": "set-animation",
+					"objectClass": "NPC1",
+					"sid": 642270359026293,
 					"parameters": {
-						"opacity": "0"
+						"animation": "\"Idle\"",
+						"from": "beginning"
 					}
 				},
 				{
-					"id": "set-opacity",
-					"objectClass": "BurbujaD",
-					"sid": 597248165552278,
+					"id": "set-animation",
+					"objectClass": "NPC2",
+					"sid": 706163431380701,
 					"parameters": {
-						"opacity": "0"
+						"animation": "\"Idle\"",
+						"from": "beginning"
 					}
 				},
 				{
-					"id": "set-opacity",
-					"objectClass": "pasarD",
-					"sid": 631620577205513,
+					"id": "set-animation",
+					"objectClass": "NPC3",
+					"sid": 104218785662584,
 					"parameters": {
-						"opacity": "0"
+						"animation": "\"Idle\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -382,20 +666,20 @@
 			],
 			"actions": [
 				{
+					"id": "set-position",
+					"objectClass": "BubbleSpeech",
+					"sid": 419408779823391,
+					"parameters": {
+						"x": "1024",
+						"y": "336"
+					}
+				},
+				{
 					"id": "set-opacity",
 					"objectClass": "BubbleSpeech",
 					"sid": 538438490518390,
 					"parameters": {
 						"opacity": "100"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "BubbleSpeech",
-					"sid": 632756254412925,
-					"parameters": {
-						"x": "1024",
-						"y": "336"
 					}
 				}
 			],
@@ -407,7 +691,7 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 913750206386521,
+					"sid": 287887633996643,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
@@ -419,7 +703,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "NPC2",
-					"sid": 794870795615598,
+					"sid": 228854511821555,
 					"parameters": {
 						"animation": "\"Interact\"",
 						"from": "beginning"
@@ -428,7 +712,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "BubbleSpeech",
-					"sid": 925476564235834,
+					"sid": 256885357254920,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -436,14 +720,286 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "NPC2",
-					"sid": 814052748069184,
+					"sid": 451993383020642,
 					"parameters": {
 						"instance-variable": "IsInteracting2",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 209205250523148,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"NPC2\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 624477611941869,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 150588914201096,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BurbujaD",
+					"sid": 847848272468729,
+					"parameters": {
+						"x": "1024",
+						"y": "304"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 160345731629357,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Dialogo",
+					"sid": 223265079075085,
+					"parameters": {
+						"x": "928",
+						"y": "272"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "pasarD",
+					"sid": 758004773595742,
+					"parameters": {
+						"x": "1120",
+						"y": "336"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 576937807047217,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 687284177291564,
+					"parameters": {
+						"text": "\"¿El examen de Mr. Mono? ¡Es pan comido!\""
+					}
 				}
 			],
-			"sid": 974223789859414
+			"sid": 923064886161353
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 172778602143552,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC2\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 697270369234282,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 274518141824810,
+					"parameters": {
+						"text": "\"Bueno, eso es porque logré esconder mi celular a tiempo.\""
+					}
+				}
+			],
+			"sid": 305119757083853
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 725104833016013,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC2\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 408985032148858,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 763645710182526,
+					"parameters": {
+						"text": "\"Pero no siempre podrás hacer eso, Mr. Perro es muy atento.\""
+					}
+				}
+			],
+			"sid": 482576461694684
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 325261244596008,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC2\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 155850753193775,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 269216631872034,
+					"parameters": {
+						"text": "\"¡Espera al examen de Mr. Mono para hacerlo!\""
+					}
+				}
+			],
+			"sid": 963029934400019
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 144090648262841,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC2\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 987578041430713,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 466483056426432,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 220341957842120,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 552024543685611,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 251144845984557,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC2",
+					"sid": 797861331946015,
+					"parameters": {
+						"instance-variable": "IsInteracting2",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 582849293142349,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 168576130484910,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"\""
+					}
+				}
+			],
+			"sid": 266712672561293
 		},
 		{
 			"eventType": "block",
@@ -468,20 +1024,20 @@
 			],
 			"actions": [
 				{
+					"id": "set-position",
+					"objectClass": "BubbleSpeech",
+					"sid": 204189557314278,
+					"parameters": {
+						"x": "1408",
+						"y": "320"
+					}
+				},
+				{
 					"id": "set-opacity",
 					"objectClass": "BubbleSpeech",
 					"sid": 674408044784910,
 					"parameters": {
 						"opacity": "100"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "BubbleSpeech",
-					"sid": 161956046090902,
-					"parameters": {
-						"x": "1408",
-						"y": "320"
 					}
 				}
 			],
@@ -493,7 +1049,7 @@
 				{
 					"id": "on-object-clicked",
 					"objectClass": "Mouse",
-					"sid": 548056077343903,
+					"sid": 870807316954279,
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
@@ -505,7 +1061,7 @@
 				{
 					"id": "set-animation",
 					"objectClass": "NPC3",
-					"sid": 154547532361982,
+					"sid": 718639730689014,
 					"parameters": {
 						"animation": "\"Interact\"",
 						"from": "beginning"
@@ -514,7 +1070,7 @@
 				{
 					"id": "set-opacity",
 					"objectClass": "BubbleSpeech",
-					"sid": 895587830724661,
+					"sid": 702483577574742,
 					"parameters": {
 						"opacity": "0"
 					}
@@ -522,14 +1078,322 @@
 				{
 					"id": "set-boolean-instvar",
 					"objectClass": "NPC3",
-					"sid": 182025020036271,
+					"sid": 701486849440158,
 					"parameters": {
 						"instance-variable": "IsInteracting3",
 						"value": "true"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 425601141406227,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 915036835411163,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 127208577884682,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "BurbujaD",
+					"sid": 611912695862250,
+					"parameters": {
+						"x": "1408",
+						"y": "288"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 464446982972684,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Dialogo",
+					"sid": 624748594654353,
+					"parameters": {
+						"x": "1312",
+						"y": "256"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "pasarD",
+					"sid": 211107470484914,
+					"parameters": {
+						"x": "1504",
+						"y": "336"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 433445420496733,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 108520645412758,
+					"parameters": {
+						"text": "\"¿Cómo? ¿No estudiaste? Pero si presentas 3 exámenes hoy...\""
+					}
 				}
 			],
-			"sid": 214958602788034
+			"sid": 874574247168861
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 400531378835619,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 969752553268484,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 849901864769948,
+					"parameters": {
+						"text": "\"Y el examen de Mrs. Mapache va a ser el más difícil.\""
+					}
+				}
+			],
+			"sid": 327671196864341
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 500562534853335,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 534837622173231,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 114146424019759,
+					"parameters": {
+						"text": "\"Te quitarán el celular y te suspenderán si traes una chuleta,\""
+					}
+				}
+			],
+			"sid": 736331372539199
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 411420540519731,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 441054214683118,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 335279447113940,
+					"parameters": {
+						"text": "\"así que mejor solo intenta copiarte de alguien.\""
+					}
+				}
+			],
+			"sid": 237366569973377
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 917866030180753,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 765411448344639,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Dialogo",
+					"sid": 479618958264262,
+					"parameters": {
+						"text": "\"El espacio entre bancos no es mucho. Suerte.\""
+					}
+				}
+			],
+			"sid": 398342015574389
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 315337764172646,
+					"parameters": {
+						"variable": "NPCactual",
+						"comparison": 0,
+						"value": "\"NPC3\""
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 969697181608201,
+					"parameters": {
+						"variable": "DialogoNum",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "BubbleSpeech",
+					"sid": 336291549155704,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Dialogo",
+					"sid": 493053513055084,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "BurbujaD",
+					"sid": 820071659047375,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "pasarD",
+					"sid": 942312166336902,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-boolean-instvar",
+					"objectClass": "NPC3",
+					"sid": 536874785946820,
+					"parameters": {
+						"instance-variable": "IsInteracting3",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 403116906393117,
+					"parameters": {
+						"variable": "DialogoNum",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 817597849495233,
+					"parameters": {
+						"variable": "NPCactual",
+						"value": "\"\""
+					}
+				}
+			],
+			"sid": 940291989130692
 		},
 		{
 			"eventType": "block",
@@ -600,11 +1464,11 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout-by-name",
+					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 542073266056534,
+					"sid": 396962580001176,
 					"parameters": {
-						"layout": "\"Layout 2\""
+						"layout": "Cutscene"
 					}
 				}
 			],

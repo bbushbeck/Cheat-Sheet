@@ -1,0 +1,52 @@
+{
+	"name": "botonSalir",
+	"plugin-id": "Sprite",
+	"sid": 997484586849565,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1977,
+						"height": 615,
+						"originX": 0.4860900354071826,
+						"originY": 0.44471544715447153,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4860794,
+						"collisionPoly": {
+							"points": [
+								0.09307030854830552,
+								0.00650406504065043,
+								0.8983308042488619,
+								0.01788617886178862,
+								0.8882144663631766,
+								0.8813008130081301,
+								0.06120384420839656,
+								0.8666666666666667
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 725533230390335,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

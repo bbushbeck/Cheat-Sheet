@@ -1,0 +1,52 @@
+{
+	"name": "botonJugar",
+	"plugin-id": "Sprite",
+	"sid": 988330160789997,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1915,
+						"height": 551,
+						"originX": 0.5023498694516971,
+						"originY": 0.5018148820326679,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 194518,
+						"collisionPoly": {
+							"points": [
+								0.09503916449086162,
+								0.007259528130671532,
+								0.9441253263707572,
+								0.036297640653357534,
+								0.9138381201044387,
+								0.9909255898366606,
+								0.05953002610966057,
+								0.9727767695099818
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 592596729301726,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
